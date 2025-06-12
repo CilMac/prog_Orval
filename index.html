@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programme du week-end</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+  body, h1, h2, ul, li, footer {
+    margin: 0; padding: 0;
+  }
+
+  body {
+    background: #f9f5e7 url('https://www.transparenttextures.com/patterns/old-mathematics.png') repeat;
+    font-family: 'MedievalSharp', cursive;
+    color: #3b2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 15px;
+  }
+
+  .container {
+    background: #fff9e6;
+    border: 4px double #6f4e37;
+    border-radius: 15px;
+    box-shadow: 6px 6px 15px rgba(101, 67, 33, 0.4);
+    max-width: 420px;
+    width: 100%;
+    padding: 30px 25px 40px 25px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+  }
+
+  .logo {
+    max-width: 90px;
+    margin: 0 auto 25px auto;
+    display: block;
+  }
+
+  .decor-top-left, .decor-bottom-right {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ornament_Celtic_2.svg/1024px-Ornament_Celtic_2.svg.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.15;
+  }
+
+  .decor-top-left {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-15deg);
+  }
+
+  .decor-bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(30deg);
+  }
+
+  h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: #5b3a21;
+    text-shadow: 1px 1px 0 #c2a165;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.8em;
+    color: #6b4c21;
+    margin: 25px 0 15px 0;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #a67c52;
+    padding-bottom: 8px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
+
+  li {
+    font-size: 1.2em;
+    margin: 10px 0 10px 0;
+    padding-left: 35px;
+    position: relative;
+    line-height: 1.4;
+    color: #4a3821;
+  }
+
+  li::before {
+    content: '✠';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9e7d4b;
+    font-size: 1.1em;
+    text-shadow: 0 0 2px #d8c489;
+  }
+
+  footer {
+    margin-top: 35px;
+    font-style: italic;
+    color: #6b4c21;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  a.menu-link {
+    color: #8b4513;
+    text-decoration: underline;
+    font-weight: 700;
+    font-family: 'UnifrakturCook', cursive;
+    transition: color 0.3s ease;
+  }
+  a.menu-link:hover {
+    color: #a0522d;
+    text-decoration: none;
+  }
+
+  @media (max-width: 430px) {
+    h1 {
+      font-size: 2.4em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    li {
+      font-size: 1.1em;
+      padding-left: 30px;
+    }
+    .container {
+      padding: 25px 20px 35px 20px;
+      max-width: 100%;
+      border-width: 3px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo_Orval.jpg" alt="Logo Orval" class="logo" />
+    <div class="decor-top-left"></div>
+    <div class="decor-bottom-right"></div>
+    <h1>Programme du Week-end</h1>
+
+    <h2>Samedi</h2>
+    <ul>
+      <li>Matin : café chez Christofo</li>
+      <li>Midi : repas à <a href="menu_ange_gardien.html" rel="noopener noreferrer" class="menu-link">L'Ange Gardien</a></li>
+      <li>Visite de l'Abbaye</li>
+      <li>Boutique (fromage, bières)</li>
+      <li>Soir : dîner à la maison</li>
+    </ul>
+
+    <h2>Dimanche</h2>
+    <ul>
+      <li>Déjeuner convivial à la maison</li>
+    </ul>
+
+    <footer>Que ce week-end vous soit doux et joyeux !</footer>
+  </div>
+</body>
+</html>
